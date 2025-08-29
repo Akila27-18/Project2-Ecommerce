@@ -1,10 +1,10 @@
 import React from "react";
-import WelcomeMessage from "./components/Welcomemessage";
+import ClickCounter from "./components/Clickcounter";
 
 function App() {
   return (
-    <div style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}>
-      <WelcomeMessage />
+    <div>
+      <ClickCounter />
     </div>
   );
 }
