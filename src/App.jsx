@@ -1,20 +1,19 @@
 import React from "react";
-import TaskList from "./components/TaskList";
+import StudentList from "./components/StudentList";
 
 function App() {
-  const myTasks = [
-    { text: "Complete React project", completed: true },
-    { text: "Study for exams", completed: false },
-    { text: "Buy groceries", completed: true },
-    { text: "Go for a walk", completed: false },
+  const students = [
+    { name: "Akila", marks: 75 },
+    { name: "Ravi", marks: 40 },
+    { name: "Nimali", marks: 55 },
+    { name: "Saman", marks: 30 },
   ];
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <TaskList tasks={myTasks} />
+      <StudentList students={students} />
     </div>
   );
 }
 
 export default App;
-
