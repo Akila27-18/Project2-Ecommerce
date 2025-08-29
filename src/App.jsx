@@ -1,17 +1,17 @@
 import React from "react";
-import StudentList from "./components/StudentList";
+import TaskManager from "./components/TaskManager";
 
 function App() {
-  const students = [
-    { name: "Akila", marks: 75 },
-    { name: "Ravi", marks: 40 },
-    { name: "Nimali", marks: 55 },
-    { name: "Saman", marks: 30 },
+  const tasks = [
+    { name: "Finish React project", completed: false },
+    { name: "Study for exam", completed: true },
+    { name: "Go grocery shopping", completed: false },
+    { name: "Workout for 30 mins", completed: false },
   ];
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <StudentList students={students} />
+      <TaskManager tasks={tasks} />
     </div>
   );
 }
