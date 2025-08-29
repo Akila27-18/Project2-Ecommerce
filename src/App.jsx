@@ -1,16 +1,20 @@
 import React from "react";
-import Profile from "./components/Profile";
+import TaskList from "./components/TaskList";
 
 function App() {
-  return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 space-y-6">
-      {/* With custom props */}
-      <Profile name="Akila" age={32} city="Chennai" />
+  const myTasks = [
+    { text: "Complete React project", completed: true },
+    { text: "Study for exams", completed: false },
+    { text: "Buy groceries", completed: true },
+    { text: "Go for a walk", completed: false },
+  ];
 
-      {/* Without props → uses defaultProps */}
-      <Profile />
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <TaskList tasks={myTasks} />
     </div>
   );
 }
 
 export default App;
+
