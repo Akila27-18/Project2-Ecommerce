@@ -1,19 +1,24 @@
 import React from "react";
-import TaskManager from "./components/TaskManager";
+import StudentList from "./components/StudentList";
 
-function App() {
-  const tasks = [
-    { name: "Finish React project", completed: false },
-    { name: "Study for exam", completed: true },
-    { name: "Go grocery shopping", completed: false },
-    { name: "Workout for 30 mins", completed: false },
-  ];
-
+const App = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <TaskManager tasks={tasks} />
+    <div style={styles.app}>
+      <h1>🎓 Student Profile Dashboard</h1>
+      <StudentList />
     </div>
   );
-}
+};
+
+const styles = {
+  app: {
+    textAlign: "center",
+    fontFamily: "Arial, sans-serif",
+    margin:"80px",
+    padding: "100px",
+    backgroundColor: "#f5f5f5",
+    minHeight: "100vh",
+  },
+};
 
 export default App;
