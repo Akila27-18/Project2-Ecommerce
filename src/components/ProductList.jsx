@@ -8,20 +8,20 @@ const products = [
     price: 999.99,
     isAvailable: true,
     discount: 10,
-    imageSrc: "/assets/laptop.jpg", // Placeholder image URL
+    imageSrc: "./assets/laptop.jpg", // Placeholder image URL
   },
   {
     title: "Smartphone",
     price: 599.99,
     isAvailable: false,
     discount: 5,
-    imageSrc: "/assets/smartphone.jpg", // Placeholder image URL
+    imageSrc: "./assets/smartphone.jpg", // Placeholder image URL
   },
   {
     title: "Headphones",
     price: 199.99,
     isAvailable: true,
-    imageSrc: "/assets/headphone.jpg", // Placeholder image URL
+    imageSrc: "./assets/headphone.jpg", // Placeholder image URL
   },
 ];
 
